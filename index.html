@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@200;300&family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9173ed532e.js" crossorigin="anonymous"></script>
+    <title>Encriptador de texto</title>
+</head>
+<body> 
+    <div class="container">
+            <section class="parte1">
+            <div class="logo">
+            <img src="logo.png">
+            </div>
+            <div class="texto">
+            <textarea id="textarea" placeholder="Ingrese un texto aqui" maxlength="1500"></textarea>
+        </div>
+        
+        
+        <div class="abajo">
+            <p><i class="fas fa-exclamation-circle"> Solo letras minúsculas y sin acentos.</i></p>
+            <div class="botones">
+                <button class="btn1" onclick="encriptar()">Encriptar</button>
+                <button class="btn2" onclick="desencriptar()">Desencriptar</button>
+            </div>
+             </div>
+    </section>
+
+
+    
+
+        <section class="section2">
+            <div class="parte2">
+                
+                <div class="textoDelInicio"  id="textoDelInicio"></div>
+                <img src="muñecoimagen.png" id="extra">
+                <h2 id="extra1">Ningún mensaje fue encontrado</h2>
+                <h3 id="extra2">Ingrese el texto que desee encriptar o desencriptar.</h3>
+                <div class="copiar" id="copiar" >
+                    <button id="copiarBoton" onclick="copyToClip(document.getElementById('textoDelInicio').innerHTML)">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    
+    
+
+
+<footer>
+
+   <form enctype="text/plain" action="mailto:rostrofioriloabril@gmail.com" method="post" class="formulario"> 
+    <div class="izquierda">
+        <h1>Encuesta de Satisfacción</h1>
+        <label for="nombre" class="nombre">Nombre Y Apellido</label>
+        <input type="text" class="nombre" name="nombre" required>
+        
+    <div class="puntos">
+    <input type="radio" name="satisfaccion" id="estupendo"  required> 
+    <label for="satisfaccion" class="regla">&#129321;</label>
+    
+    <input type="radio" name="satisfaccion" id="bueno"> 
+    <label for="satisfaccion" class="regla">&#128515;</label>
+    
+    <input type="radio" name="satisfaccion" id="normal"> 
+    <label for="satisfaccion" class="regla">&#128578;</label>
+    
+    <input type="radio" name="satisfaccion" id="noMeGusto"> 
+    <label for="satisfaccion" class="regla">&#128577;</label>
+    
+    <input type="radio" name="satisfaccion" id="loOdie"> 
+    <label for="satisfaccion" class="regla">&#128544;</label>
+    </div>
+    <label for="sugerencia">Sugerencia (Opcional)</label>
+    <textarea name="sugerencia" class="sugerencia"></textarea>
+    <input type="submit" value="Enviar" class="enviar">
+    
+</div>
+</form>
+<div class="derecha">
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26282.19462214232!2d-58.50625637943461!3d-34.571924612454566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb65c360890c1%3A0x8bd20bac2f970066!2sVilla%20Urquiza%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1651284423619!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+<div class="creador">
+    <h1>&copy; Rostro Fiorilo Abril Micaela</h1>
+    <h2>Contacto: rostrofioriloabril@gmail.com</h2>
+    
+</div>    
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

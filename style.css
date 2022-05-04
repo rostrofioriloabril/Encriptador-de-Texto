@@ -1,0 +1,1020 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+ font-family: 'Inter', sans-serif;
+ background: linear-gradient(#e6e7ea,50%,#050b2b);
+
+}
+
+
+/*--------------------- PARTE DE ARRIBA A LA IZQUIERDA-----------------*/
+.container {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 20px;
+    
+}
+.parte1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 100%;
+}
+.logo {
+    height: 50px;
+    width: 100%;
+    padding: 30px 0px 0px 45px;
+    user-select: none;
+}
+.logo img {
+    width: 34px;
+    position: absolute;
+    height: 40px;
+}
+.texto {
+    
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    margin-top: 20px;
+    width: 85%;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 5%;
+   
+}  
+.texto textarea {
+    font-size: 32px;
+    border: 1px solid #050b2b ;
+    margin-bottom: 100px;
+    width: 98%;
+    height: 400px;
+    margin-right: 2%;
+    color: #0A3871;
+    resize: none;
+    font-weight: 400;
+    max-height: 600px;
+    overflow: auto;
+    text-transform: lowercase;
+}
+textarea::placeholder {
+    color:#0A3871;
+}
+
+.textoDelInicio, #textarea{
+    font-size: 28px;
+    margin: 0;
+}
+/*-----------------------parte de abajo izquierda--------------*/
+.abajo{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-left: 12%;
+}
+.botones {
+    position: static;
+    width: auto;
+    height: 68px;
+}
+.botones button{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 325px;
+    max-width: 325px;
+    height: 67px;
+    border-radius: 26px;
+    border: 1px solid #000;
+    cursor: pointer;
+    
+}
+.btn1 {
+    background: radial-gradient( #154c79, #050b2b) ;
+    color: #eeeee4;
+    text-shadow: 2px 2px 2px #000;
+}
+.botones button:hover{
+    box-shadow: 0px 2px 15px #000;
+}
+.btn2 {
+    background: radial-gradient(#eeeee4, #76b5c5) ;
+    text-shadow: 2px 2px 2px #fff;
+    
+}
+
+
+/*------------------------------SECCION 2 DERECHA---------------------*/
+.section2 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+.parte2 {
+    box-shadow: 4px 0px 11px #000;
+    width: 400px;
+    height: 750px;
+    display: flex;
+    text-align: center;
+    overflow-wrap: break-word;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 34px;
+    justify-content: center;
+    background:linear-gradient(#eeeee4, #76b5c5, #154c79
+) ;
+
+}
+.parte2 img {
+    width: 100%;
+    height: 50%;
+    padding-top: -10px;
+    box-sizing: border-box;
+
+}
+.parte2 h2 {
+    font-family: 'Inter', sans-serif;
+    height: 40px;
+    letter-spacing: 0;
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20px;
+    overflow-wrap: break-word;
+    font-size: 23px;
+}
+.parte2 h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+.extra {
+  user-select: none;
+}
+
+
+.textoDelInicio{
+    font-size: 32px;
+    display: none;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    max-height: 800px;
+    padding: 35px 20px 40px ;
+    overflow: hidden;
+    border-radius: 34px;
+    overflow-y: visible;
+    border-block: none;
+}
+
+
+
+.copiar {
+    display: none;
+    padding-top: 35px;
+    height: 10%;
+    width: 100%; 
+}
+
+.copiar button { /*---------boton de copiar que aparecerá cuando se clickee en encriptar---------*/
+   background-color: #1e81b0;
+  margin: 0 auto;
+   width: 160px;
+   height: 60px;
+   border: none;
+   color: #fff;
+   font-size: 20px;
+   border-radius: 20px;
+   border: 1px solid #fff;
+   transition: 1s background;
+   cursor: pointer;
+}
+.copiar button:hover {
+    background-color: #10435b;
+    border: 1px solid #000;
+}
+
+
+
+/*---------------------FOOTER----------*/
+footer {
+    padding-top: 35px;
+    display: flex;
+    width: 100%;
+    max-height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #fff;
+    align-content: center;
+    background: linear-gradient(#000, 1%, #050b2b, #000);
+    
+}
+.formulario {
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 320px;
+    width: 60%;
+
+}
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+.formulario h1 {
+    margin-top: -5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    user-select: none;
+    padding: 0;
+    font-weight: normal;
+    border-bottom: 1px solid #fff;
+}
+footer input[type="text" i] {
+    margin: 5px 0;
+    padding: 9px 0;
+    font-size: 16px;
+    border: 1px solid #050b2b;
+    
+}
+
+input[name="satisfaccion"]:first-child {
+    margin-left: 0px;
+    
+}
+input[name="satisfaccion"] {
+    margin: 10px -5px;
+}
+
+.puntos {
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 5px 0px;
+   
+}
+input[type="radio" i]{
+     cursor: pointer;
+}
+ .sugerencia {
+    height: 70px;
+    font-size: 16px;
+    margin: 15px 0;
+    border: 1px solid #050b2b;
+}
+.enviar {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    color: #eeeee4;
+    text-shadow: 2px 2px 2px #000;
+    background: radial-gradient(#76b5c5,1%,#154c79,60%, #050b2b);
+    border: 1px solid #050b2b;
+    cursor: pointer;
+    transition: 5s background ;
+  
+}
+.enviar:hover {
+    background: radial-gradient(#050b2b, #154c79, #76b5c5) ;
+   
+}
+
+
+
+
+
+
+.derecha {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 38.5%;
+    height: 313px;
+}
+
+.mapa {
+  
+    width: 100%;
+    height: 100%;
+    
+}
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+}
+.creador {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    margin-bottom: 20px;
+}
+.creador h1, .creador h2 {
+    margin-top: 5px;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    
+}
+.creador h1{
+    font-size: 26px;
+    
+}
+.creador h2{
+    font-size: 22px;
+    
+    
+}
+
+@media only screen and (max-width:277px){
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    .parte1{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .logo{
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        
+        box-sizing: content-box;
+
+    }
+    .logo img {
+        width: 20px;
+        height: 80%;
+        position: relative;
+        padding-left: 5px;
+    }
+    .texto{
+        width: 96%;
+        height: 300px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        
+ 
+
+    }
+    .texto textarea {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    
+        margin: 0;
+    }
+    .abajo{
+        width: 100%;
+        margin: 0 auto;
+        letter-spacing: 1px;
+        height: 60px;
+        text-align: center;
+        padding: 0;
+        
+    }
+    .abajo p {
+        margin: 0 auto;
+    }
+    .botones{
+       width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       padding: 0;
+
+    }
+    .botones button{
+        width: 250px;
+        height: 45px;
+        margin-top: 10px;
+        
+
+    }
+    .section2 {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: -15px;
+        height: 300px;
+
+    }
+    .parte2{
+        width: 90%;
+        height: 90%;
+        overflow-wrap: break-word;
+        padding: 10px 20px 40px;
+        background:linear-gradient(#eeeee4, #76b5c5, #154c79) ;     
+
+    }
+    #extra{
+        display: none;
+    }
+    #extra1{
+        font-size: 22px;
+    } #extra2{
+    font-weight: normal;
+    }
+    .textoDelInicio{
+        padding: 2px ;
+        max-height: 89%;
+        font-size: 28px;
+    }
+    .copiar{
+        margin-top: 215px;
+        width: 100%;
+        position: absolute;
+    }
+    .copiar button{
+        width: 140px;
+        height: 43px;
+        margin: 0;
+        padding: 0;
+    }
+    /*////////////////////////////////*/
+    footer{
+        width: 100%;
+        height:550px;
+        margin: 0;
+        margin-top: 10px;
+        
+    }
+
+    .formulario{
+            width: 100%;   
+            height: 330px;
+            margin-top: -60px;
+            margin-bottom: 60px;
+
+    }
+    .sugerencia{
+        padding: 0;
+        height: 50px;
+        margin: 5px 0;
+    }
+    .formulario h1{
+        width: 100%;
+        padding: 20px 0 0;
+        padding-top: 10px;
+        font-weight: normal;
+        padding-bottom: 0;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+    }
+    .izquierda{
+        box-sizing: border-box;
+        width: 100%;
+        height: 280px;
+        padding: 0 2%;
+        padding-top: 41px;
+    }
+    .izquierda input[type="text"]{
+        width: 100%;
+        padding: 5px 0;
+    }
+    .puntos{
+        margin: -1px 0 3px;
+    }
+    .enviar{
+        margin-top: 5px;
+    }
+    .derecha{
+        width: 98%;
+        height: 200px;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: -100px;
+    }
+    .mapa{
+         width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        
+    }
+
+    .creador{
+        margin-top: 0px;
+        width: 100%;
+        height: 45px;
+        padding: 5px;
+        padding-bottom: 10px;
+        overflow: auto;
+    }
+    .creador h1{
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: lighter;
+        margin-bottom: 0px;
+    }
+    .creador h2 {
+        font-size: 14px;
+        font-weight: lighter;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width:278px) and (max-width:540px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    .parte1{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .logo{
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        
+        box-sizing: content-box;
+
+    }
+    .logo img {
+        width: 20px;
+        height: 80%;
+        position: relative;
+        padding-left: 5px;
+    }
+    .texto{
+        width: 96%;
+        height: 300px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        
+ 
+
+    }
+    .texto textarea {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    
+        margin: 0;
+    }
+    .abajo{
+        width: 100%;
+        margin-top: 0;
+        margin: 0 auto;
+        letter-spacing: 1px;
+        height: 60px;
+        text-align: center;
+        padding: 0;
+        
+    }
+    .abajo p {
+        margin: 0 auto;
+    }
+    .botones{
+       width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       padding: 0;
+
+    }
+    .botones button{
+        width: 250px;
+        height: 45px;
+        margin-top: 10px;
+        
+
+    }
+    .section2 {
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: -15px;
+        height: 300px;
+
+    }
+    .parte2{
+        width: 90%;
+        height: 90%;
+        overflow-wrap: break-word;
+        padding: 10px 20px 40px;
+        background:linear-gradient(#eeeee4, #76b5c5, #154c79) ;     
+
+    }
+    #extra{
+        display: none;
+    }
+    #extra1{
+        font-size: 22px;
+    } #extra2{
+    font-weight: normal;
+    }
+    .textoDelInicio{
+        padding: 2px ;
+        max-height: 89%;
+        font-size: 28px;
+    }
+    .copiar{
+        margin-top: 215px;
+        width: 100%;
+        position: absolute;
+    }
+    .copiar button{
+        width: 140px;
+        height: 43px;
+        margin: 0;
+        padding: 0;
+    }
+    /*////////////////////////////////*/
+    footer{
+        width: 100%;
+        height:550px;
+        margin: 0;
+        margin-top: 10px;
+        
+    }
+
+    .formulario{
+            width: 100%;   
+            height: 330px;
+            margin-top: -60px;
+            margin-bottom: 60px;
+
+    }
+    .sugerencia{
+        padding: 0;
+        height: 50px;
+        margin: 5px 0;
+    }
+    .formulario h1{
+        width: 100%;
+        padding: 20px 0 0;
+        padding-top: 10px;
+        font-weight: normal;
+        padding-bottom: 0;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+    }
+    .izquierda{
+        box-sizing: border-box;
+        width: 100%;
+        height: 280px;
+        padding: 0 2%;
+        padding-top: 41px;
+    }
+    .izquierda input[type="text"]{
+        width: 100%;
+        padding: 5px 0;
+    }
+    .puntos{
+        margin: -1px 0 3px;
+    }
+    .enviar{
+        margin-top: 5px;
+    }
+    .derecha{
+        width: 98%;
+        height: 200px;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: -100px;
+    }
+    .mapa{
+         width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        
+    }
+
+    .creador{
+        margin-top: 0px;
+        width: 100%;
+        height: 45px;
+        padding: 5px;
+        margin-bottom: 40px;
+    }
+    .creador h1{
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: lighter;
+        margin-bottom: 0px;
+    }
+    .creador h2 {
+        font-size: 18px;
+        font-weight: lighter;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (min-width:541px) and (max-width:688px) {
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 100%;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    .parte1{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .logo{
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        
+        box-sizing: content-box;
+
+    }
+    .logo img {
+        width: 20px;
+        height: 80%;
+        position: relative;
+        padding-left: 5px;
+    }
+    .texto{
+        width: 96%;
+        height: 300px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        
+ 
+
+    }
+    .texto textarea {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    
+        margin: 0;
+    }
+    .abajo{
+        width: 100%;
+        margin-top: 0;
+        margin: 0 auto;
+        letter-spacing: 1px;
+        height: 60px;
+        text-align: center;
+        padding: 0;
+        
+    }
+    .abajo p {
+        margin: 0 auto;
+    }
+    .botones{
+       width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       padding: 0;
+
+    }
+    .botones button{
+        width: 250px;
+        height: 50px;
+        margin-top: 10px;
+
+    }
+    .section2 {
+        width: 100%;
+        margin-top: -25px;
+        margin-bottom: -15px;
+        height: 300px;
+
+    }
+    .parte2{
+        width: 90%;
+        height: 90%;
+        overflow-wrap: break-word;
+        padding: 10px 20px 40px;
+        background:linear-gradient(#eeeee4, #76b5c5, #154c79) ;     
+
+    }
+    #extra{
+        display: none;
+    }
+    #extra1{
+        font-size: 22px;
+    } #extra2{
+    font-weight: normal;
+    }
+    .textoDelInicio{
+        padding: 2px ;
+        max-height: 89%;
+        font-size: 28px;
+    }
+    .copiar{
+        margin-top: 215px;
+        width: 100%;
+        position: absolute;
+    }
+    .copiar button{
+        width: 140px;
+        height: 43px;
+        margin: 0;
+        padding: 0;
+    }
+    /*////////////////////////////////*/
+    footer{
+        width: 100%;
+        height:550px;
+        margin: 0;
+        margin-top: 10px;
+        
+    }
+
+    .formulario{
+            width: 100%;   
+            height: 330px;
+            margin-top: -60px;
+            margin-bottom: 60px;
+
+    }
+    .sugerencia{
+        padding: 0;
+        height: 50px;
+        margin: 5px 0;
+    }
+    .formulario h1{
+        width: 100%;
+        padding: 20px 0 0;
+        padding-top: 10px;
+        font-weight: normal;
+        padding-bottom: 0;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+    }
+    .izquierda{
+        box-sizing: border-box;
+        width: 100%;
+        height: 280px;
+        padding: 0 2%;
+        padding-top: 41px;
+    }
+    .izquierda input[type="text"]{
+        width: 100%;
+        padding: 5px 0;
+    }
+    .puntos{
+        margin: -1px 0 3px;
+    }
+    .enviar{
+        margin-top: 5px;
+    }
+    .derecha{
+        width: 98%;
+        height: 200px;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: -100px;
+    }
+    .mapa{
+         width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        
+    }
+
+    .creador{
+        margin-top: 0px;
+        width: 100%;
+        height: 45px;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .creador h1{
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: lighter;
+        margin-bottom: 0px;
+    }
+    .creador h2 {
+        font-size: 18px;
+        font-weight: lighter;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (min-width:689px) and (max-width:1144px){
+    .abajo{
+        margin: 0 ;
+        padding: 0;
+        margin-top: -5px;
+    }
+    .abajo p {
+        padding-left: 13%;
+    }
+    .botones {
+        padding-left: 14%;
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .section2{
+        width: 39%;
+        height: 770px;
+        margin-left: 1%;
+        padding-top: 30px;
+        
+    }
+    .parte2{
+       height: 700px; 
+       width: 100%;
+       overflow-wrap: break-word;
+    }
+
+    .parte2 img {
+        height: 40%;
+    }
+    #extra2{
+        font-weight: normal;
+    }
+    footer{
+        margin-top: -50px;
+    }
+    .creador{
+        margin-top: 0px;
+        width: 100%;
+        height: 45px;
+        padding: 5px;
+        margin-bottom: 40px;
+    }
+    .creador h1{
+        margin-top: 15px;
+        font-size: 22px;
+        font-weight: lighter;
+        margin-bottom: 0px;
+    }
+    .creador h2 {
+        font-size: 20px;
+        font-weight: lighter;
+        padding: 0;
+    }
+}
+@media only screen and (min-width:1145px) and (max-width:1225px){
+    .botones {
+        padding-left: 0;
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        margin-left: -25px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .botones button {
+        width: 310px;
+        margin: 2px;
+    }
+}
